@@ -1,0 +1,4 @@
+# Placeholder config for deployment compatibility
+[build]
+  publish = "frontend/build"
+  command = "npm run build"
