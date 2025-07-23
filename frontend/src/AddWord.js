@@ -25,7 +25,7 @@ const AddWord = ({ onWordAdded }) => {
       setMesaj('Tüm alanları doldurun.');
       return;
     }
-    const resp = await fetch('http://localhost:3002/api/words', {
+    const resp = await fetch('https://openwords-backend.vercel.app/api/words', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ kelime, aciklamalar: aciklamaList })

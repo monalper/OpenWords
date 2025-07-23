@@ -138,7 +138,7 @@ const WordDetail = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
-    fetch(`http://localhost:3002/api/words/${kelime}`)
+    fetch(`https://openwords-backend.vercel.app/api/words/${kelime}`)
       .then(res => {
         if (!res.ok) throw new Error('Not found');
         return res.json();

@@ -6,7 +6,7 @@ const WordList = () => {
   const [words, setWords] = useState([]);
 
   const fetchWords = () => {
-    fetch('http://localhost:3002/api/words')
+    fetch('https://openwords-backend.vercel.app/api/words')
       .then(res => res.json())
       .then(data => setWords(data));
   };
