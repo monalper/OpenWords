@@ -1,7 +1,7 @@
 import fs from 'fs/promises';
 import path from 'path';
 
-const WORDS_PATH = path.resolve(process.cwd(), '../words.json');
+const WORDS_PATH = path.join(process.cwd(), 'api', 'words.json');
 
 export default async function handler(req, res) {
   res.setHeader('Access-Control-Allow-Origin', '*');
